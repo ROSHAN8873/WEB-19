@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-color: black;
+            border-radius: 20px;
+            height: 60px;
+        }
+        #container > div{
+            /* border:1px solid orange; */
+            height: 100%;
+            width: 50%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1,60px);
+            gap: 20px;
+        }
+        #container > div:first-child {
+            color: white;
+            display: flex;
+            align-items: center;
+            padding-left: 2%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #container > div:last-child > div{ 
+            /* border: 1px solid blue; */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id = "container">
+        <div>Reebok</div>
+        <div>
+            <div>Men</div>
+            <div>Women</div>
+            <div>Login</div>
+            <div>Signup</div>
+        </div>
+    </div>
+</body>
+</html>
