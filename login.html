@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background:linear-gradient(to bottom right, rgb(0, 153, 255), purple);
+            background-blend-mode: screen;
+            background-attachment: fixed; 
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+        }
+        #loginBox {
+            width: 440px;
+            height: 650px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+        }
+        h1 {
+            margin-top: 80px;
+            font-size: 50px;
+        }
+        input {
+            margin-top: 30px;
+            width: 350px;
+            height: 50px;
+            border: transparent;
+            border-bottom: 2px solid #adadad;
+            font-size: 20px;
+        }
+        button {
+            width: 350px;
+            height: 60px;
+            margin:40px 0px ;
+            background:linear-gradient(to bottom right, rgb(0, 153, 255), purple);
+            color: white;
+            font-size: 23px;
+        }
+        p{
+            color: #6d6c6c;
+            font-size: 18px;
+        }
+        p + p {
+            margin-top: -3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="loginBox">
+        <h1>Login</h1>
+        <div>
+            <input type="text" placeholder="Email"> <br>
+            <input type="password" placeholder="Password">
+        </div>
+        <button>Login</button>
+        <p>Forgot <a href="">Password</a>?</p>
+        <p>Don't have an account?<a href="signup,html">Sign up</a></p>
+    </div>
+</body>
+</html>
