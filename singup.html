@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>singup</title>
+    <style>
+        body {
+            background-blend-mode: screen;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+        }
+        #singupBox {
+            width: 440px;
+            height: 650px;
+            background-color: #00897b;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        h1 {
+            margin-top: 80px;
+            font-size: 50px;
+            color: white;
+        }
+        input {
+            margin-top: 30px;
+            width: 350px;
+            height: 50px;
+            border: transparent;
+            /* border-bottom: 2px solid #adadad; */
+            font-size: 20px;
+        }
+        button{
+            width: 350px;
+            height: 50px;
+            margin: 40px 0px;
+            background: #4db6ac;
+            color: white;
+            font-size: 20px;
+            border: transparent;
+        }
+    </style>
 </head>
 <body>
-    <h1>VISITORS</h1><br>
-    <input type="text";placeholder="FULL NAME"><br>
-    <input type="text";placeholder="EMAIL"><br>
-    <input type="text";placeholder="ORGANIZATION"><br>
-    <button>SINGUP</button><br>
-    <button>RETURN</button>
-
-
+    <div id="singupBox">
+        <h1>-Visitor-</h1>
+        <div>
+            <input type="text" placeholder="Full Name"><br>
+            <input type="text" placeholder="Email"> <br>
+            <input type="text" placeholder="Organization">
+        </div>
+        <button>SING UP</button><br>
+        <button>RETURN</button>
+    </div>
 </body>
 </html>
